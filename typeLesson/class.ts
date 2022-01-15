@@ -1,4 +1,4 @@
-import { World } from "./class/world.js";
+import { World } from "./world.js";
 
 const worldOne = new World(true,"gunny",111);
 const worldTwo = new World(false,"minji",999);
