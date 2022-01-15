@@ -1,32 +1,31 @@
-//⭐️ explict Type
-var stockName;
-var stockPrice;
-var stockOpen;
-console.log(stockName, "1");
-console.log(stockPrice, "2");
+"use strict";
+//⭐️ 1.explict Type
+let stockName;
+let stockPrice;
+let stockOpen;
 // stockName=10;
 stockName = "AAPL";
 stockName = 1111;
 // stockPrice="1000";
 stockPrice = 10000;
-//⭐️ Array Type
+//⭐️ 2.Array Type
 // let noPushList:string[]; => undefined
 // console.log(noPushList,"1")
-var stockList = [];
+let stockList = [];
 console.log(stockList, "2");
 // stockList.push(11,true,"BAC");
 stockList.push("AAPL", "MSFT", "BAC");
-// ⭐️Union Type
-var unionList = [];
+// ⭐️ 3. Union Type
+let unionList = [];
 unionList.push("hello");
 unionList.push(3);
-// ⭐️ Object Type
-var oneOBJ = {};
+// ⭐️ 4. Object Type
+let oneOBJ = {};
 oneOBJ = {
     name: "gunny",
-    awesome: true
+    awesome: true,
 };
-var twoOBJ = { name: "minji", age: 0, awesome: true };
+let twoOBJ = { name: "minji", age: 0, awesome: true };
 twoOBJ.name = "minji";
 twoOBJ.age = 1;
 twoOBJ.awesome = true;

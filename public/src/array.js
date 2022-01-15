@@ -1,17 +1,18 @@
+"use strict";
 // ARRAY; ❌  ✅
-var list = ["one", "two"];
+let list = ["one", "two"];
 list.push("three"); // OK HERE  ✅
 // NOT OK HERE  ❌
 // list.push(4); 
 // NOT OK HERE  ❌
-var mixedList = [1, "two"];
+let mixedList = [1, "two"];
 mixedList.push(3); // OK HERE  ✅
 mixedList.push("four"); // OK HERE  ✅
 // OBJECT
-var apple = {
+let apple = {
     type: "company",
     stock: 9999,
-    good: true
+    good: true,
 };
 // NOT OK HERE  ❌
 // apple.good = "yes"
@@ -25,7 +26,6 @@ apple.good = false;
 apple = {
     type: "fruit",
     stock: 1,
-    good: false
+    good: false,
 };
-delete apple.good;
 // OK HERE  ✅

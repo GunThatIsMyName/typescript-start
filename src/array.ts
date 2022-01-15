@@ -37,7 +37,6 @@ apple={
 }
 
 
-delete apple.good;
  // OK HERE  ✅
 
 
