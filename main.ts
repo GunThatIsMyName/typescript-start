@@ -18,3 +18,4 @@ const doubleNumber = (num:number)=>{
 // Argument of type 'string' is not assignable to parameter of type 'number'.
 // doubleNumber("2")
 doubleNumber(12)
+
