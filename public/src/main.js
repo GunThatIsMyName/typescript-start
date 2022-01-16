@@ -1,6 +1,6 @@
 import { Invoice } from "./class/Invoices.js";
 import { Payment } from "./class/Payment.js";
-import { ListTemplate } from './class/ListTemplate.js';
+import { ListTemplate } from "./class/ListTemplate.js";
 // More secures
 let paymentDoc;
 let invoiceDoc;
@@ -31,13 +31,15 @@ const ItemListDOM = document.querySelector(".item-list");
 const list = new ListTemplate(ItemListDOM);
 const handleSubmit = (e) => {
     e.preventDefault();
+    //   this is tuples ⭐️
+    let values = [tofromDOM.value, detailsDOM.value, amountDOM.valueAsNumber];
     let newDoc;
     if (selectTypeDOM.value === "invoice") {
-        newDoc = new Invoice(tofromDOM.value, detailsDOM.value, amountDOM.valueAsNumber);
+        newDoc = new Invoice(...values);
         list.render(newDoc, selectTypeDOM.value, "end");
     }
     else {
-        newDoc = new Payment(tofromDOM.value, detailsDOM.value, amountDOM.valueAsNumber);
+        newDoc = new Payment(...values);
         list.render(newDoc, selectTypeDOM.value, "start");
     }
     form.reset();

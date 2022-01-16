@@ -16,5 +16,22 @@ export class ListTemplate {
       this.element.append(container);
     }
   }
-  
+
 }
+
+interface IsType<T extends {} > {
+    name:string;
+    numb:number;
+    data:T
+}
+
+enum hiho{
+    Zero,One,Two
+}
+const me:IsType<object>={
+    name:"string",
+    numb:hiho.Zero,
+    data:{name:"hello"}
+}
+
+console.log(me)

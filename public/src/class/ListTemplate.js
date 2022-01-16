@@ -16,3 +16,15 @@ export class ListTemplate {
         }
     }
 }
+var hiho;
+(function (hiho) {
+    hiho[hiho["Zero"] = 0] = "Zero";
+    hiho[hiho["One"] = 1] = "One";
+    hiho[hiho["Two"] = 2] = "Two";
+})(hiho || (hiho = {}));
+const me = {
+    name: "string",
+    numb: hiho.Zero,
+    data: { name: "hello" }
+};
+console.log(me);
