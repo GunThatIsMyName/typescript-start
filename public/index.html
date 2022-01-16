@@ -1,57 +1,55 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TypeScript Tutorial</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypeScript Tutorial</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>주식 구매</h1>
 
-  <div class="wrapper">
-    <h1>주식 구매</h1>
+      <!-- output list -->
+      <ul class="item-list"></ul>
+    </div>
 
-    <!-- output list -->
-    <ul class="item-list">
-      
-    </ul>
-  </div>
+    <footer>
+      <form class="new-item-form">
+        <div class="field">
+          <label>Type:</label>
+          <select id="type">
+            <option value="invoice">Invoice</option>
+            <option value="payment">Payment</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>To / From:</label>
+          <input type="text" id="tofrom" />
+        </div>
+        <div class="field">
+          <label>Details:</label>
+          <input type="text" id="details" />
+        </div>
+        <div class="field">
+          <label>Amount (£):</label>
+          <input type="number" id="amount" />
+        </div>
+        <button>Add</button>
+      </form>
 
-  <footer>
-    <form class="new-item-form">
-      <div class="field">
-        <label>Type:</label>
-        <select id="type">
-          <option value="invoice">Invoice</option>
-          <option value="payment">Payment</option>
-        </select>
-      </div>
-      <div class="field">
-        <label>To / From:</label>
-        <input type="text" id="tofrom">
-      </div>   
-      <div class="field">
-        <label>Details:</label>
-        <input type="text" id="details">
-      </div>
-      <div class="field">
-        <label>Amount (£):</label>
-        <input type="number" id="amount">
-      </div>
-      <button>Add</button>
-    </form>
+      <a href="https://github.com/GunThatIsMyName">Junhyun Github</a>
+    </footer>
 
-    <a href="https://www.thenetninja.co.uk">The Net Ninja</a>
-  </footer>
+    <script type="module" src="./src/main.js"></script>
 
-  <script type="module" src='./src/generic.js'></script>
-  <!-- <script type="module" src='./src/class.js'></script> -->
-  <!-- <script type="module" src='./src/interface.js'></script> -->
-  <!-- <script src='./src/Dom.js'></script> -->
-  <!-- <script src='./src/array.js'></script>
+    <!-- <script type="module" src='./src/class.js'></script> -->
+    <!-- <script type="module" src='./src/interface.js'></script> -->
+    <!-- <script src='./src/Dom.js'></script> -->
+    <!-- <script src='./src/array.js'></script>
   <script src='./src/explict.js'></script>
   <script src='./src/main.js'></script>
   <script src='./src/function.js'></script>
   <script src='./src/aliases.js'></script>
   <script src='./src/functionSignature.js'></script> -->
-</body>
+  </body>
 </html>
